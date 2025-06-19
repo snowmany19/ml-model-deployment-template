@@ -1,3 +1,5 @@
+![CI](https://github.com/snowmany19/ml-model-deployment-template/actions/workflows/ci.yml/badge.svg)
+
 # 🧠 ML Model Deployment Template
 
 A production-ready FastAPI service for serving predictions from a trained RandomForestClassifier on the Iris dataset.
