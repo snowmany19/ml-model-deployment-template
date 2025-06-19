@@ -4,12 +4,27 @@
 
 A production-ready FastAPI service for serving predictions from a trained RandomForestClassifier on the Iris dataset.
 
+🌐 **Live Demo**:  
+➡️ [https://ml-model-deployment-template-production.up.railway.app/predict](https://ml-model-deployment-template-production.up.railway.app/predict)
+
+---
+
 ## 🔧 Features
 - 🧠 Simple ML model (Random Forest on Iris dataset)
 - 🚀 FastAPI REST endpoint for `/predict`
 - 🐳 Dockerfile for easy containerization
 - 🔄 GitHub Actions CI for training
 - 📦 Requirements.txt for dependency management
+
+---
+
+## 📈 How to Use
+
+### 1. Train the model
+```bash
+cd backend
+python train.py
+
 
 ## 📈 How to Use
 
@@ -52,8 +67,9 @@ data = {
     "petal_width": 0.2
 }
 
-response = requests.post("http://localhost:8000/predict", json=data)
+response = requests.post("https://ml-model-deployment-template-production.up.railway.app/predict", json=data)
 print(response.json())
+
 ```
 
 ## 📂 Structure
